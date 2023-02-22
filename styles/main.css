@@ -1,83 +1,78 @@
-/* custom property */
-:root {
-	--global-color-1: #800000;
-}
-/*reset seletor */
+/* the styles for the elements */
 * {
 	margin: 0;
 	padding: 0;
 }
-
-
-/* the styles for the elements */
+html {
+	background-color: white;
+	
+}
 body {
 	font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
-    margin-left: 10px;
-	width: 600px;
-	margin-top: 0;
-	margin-bottom: 0;
-	margin-right: auto;
-	margin-left: auto;
-	border: 3px solid #931420;
-	background-color: #fffded;
+    width: 525px;
+    margin: 0 auto;
+    border: 3px solid #931420;
+    background-color: #fffded;
+	float: right;
 }
-
-html{
-	background-color: white;
-}
-
-
 a:focus, a:hover {
 	font-style: italic;
 }
-/* the styles for the header */
 
-header{
-	border-bottom: maroon;
-	padding-top: 1.5em;
-	padding-bottom: 2em;
-	background-image: linear-gradient(30,#f6bb73 5% , #f6bb73 20% , white 50% , #f6bb73 80% , #f6bb73 75%);
+h1{
+	font-size: 150%;
+	padding-top: .5em;
+	padding-bottom: .25em;
+	margin: 0;
 }
 
+/* the styles for the header */
+header {
+	padding: 1.5em 0 2em 0;
+	border-bottom: 3px solid #931420;
+	background-image: -moz-linear-gradient(
+	    30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
+	background-image: -webkit-linear-gradient(
+	    30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
+	background-image: -o-linear-gradient(
+	    30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
+	background-image: linear-gradient(
+	    30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
+}
 header h2 {
 	font-size: 175%;
-	color: var(--global-color-1);
-	
+	color: #800000;
 }
 header h3 {
 	font-size: 130%;
-	font-style: italic;
 	
 }
 header img {
 	float: left;
-	padding-left: 30px;
-	padding-right: 30px;
+	
 }
 .shadow {
-	text-shadow: 2px 2px 2px var(--global-color-1);
+	text-shadow: 2px 2px 2px #800000;
 }
 /* the styles for the main content */
-main {
-	clear: left;
-	padding-right: 30px;
-	padding-left: 30px;
-}
+
+  
+
 main h1 {
 	font-size: 150%;
 	padding: .3em 0;
-	border-top: #931420;
-	border-bottom: #931420;
+    border-top: 3px solid #931420;
+    border-bottom: 3px solid #931420;
 }
 main h2 {
-	color: var(--global-color-1);
-	font-size: 130%;
-	padding: .5em 0 .25em 0;
+	color: #800000;
+	font-size: 100%;
+	padding: .75em 0 .50em 0;
 }
 main h3 {
 	font-size: 105%;
-	padding-bottom: .25em;
+	padding-bottom: .75em;
 }
 main img {
 	padding-bottom: 1em;
@@ -88,7 +83,6 @@ main p {
 main blockquote {
 	padding: 0 2em;
 	font-style: italic;
-	
 }
 main ul {
 	padding: 0 0 .25em 1.25em;
@@ -97,12 +91,63 @@ main li {
 	padding-bottom: .35em;
 }
 
+/* the styles for the article */
+article {
+	padding: .5em 0;
+	border-top: 2px solid #800000;
+	border-bottom: 2px solid #800000;
+}
+article h2 {
+	padding-top: 0;
+}
+article h3 {
+	font-size: 105%;
+	padding-bottom: .25em;
+}
+
+article img{
+	float: right;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	
+}
+
+/* the styles for the aside */
+
+aside{
+	padding-left: 20px;
+	padding-bottom: 20px;
+}
+aside h2{
+	font-style: italic;
+}
+
+aside h3 {
+	font-size: 105%;
+	padding-bottom: .25em;
+	width: 215px;
+	float: right;
+	
+}
+aside img {
+	padding-bottom: 1em;
+}
+
 /* the styles for the footer */
+footer {
+	background-color: #931420;
+	clear: both;
+}
 footer p {
 	text-align: center;
-	padding: 1em 0;
 	color: white;
+	padding: 1em 0;
 }
-footer{
-	background-color: #931420;	
+
+section{
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	font-style: italic;
 }
