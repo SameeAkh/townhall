@@ -13,6 +13,7 @@ body {
     margin: 0 auto;
     border: 3px solid #931420;
     background-color: #fffded;
+	max-width: 960px;
 }
 a:focus, a:hover {
 	font-style: italic;
@@ -40,14 +41,14 @@ header h3 {
 }
 header img {
 	float: left;
-	padding: 0 30px;
+	padding: 0 3.125%;
 }
 .shadow {
 	text-shadow: 2px 2px 2px #800000;
 }
 /* the styles for the section */
 section {
-	width: 525px;
+	width: 54.687%;
 	float: right;
 	padding: 0 20px 20px 20px;
 }
@@ -86,7 +87,6 @@ section li {
 }
 #nav_menu a{
 	display: block;
-	width: 120px;
 	text-align: center;
 	padding-bottom: 1em;
 	padding-top: 1em;
@@ -101,6 +101,7 @@ section li {
 
 #nav_menu ul li a.current{
 	color: yellow;
+	width: 100%;
 }
 
 #nav_menu ul li:hover > ul{
