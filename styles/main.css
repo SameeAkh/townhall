@@ -186,4 +186,23 @@ footer p {
 	section aside h2 {
 		font-size: 110%;
 	}
+	#nav_menu{
+		display: none;
+	}
+	#mobile_menu{
+		display: block;
+		background-color: #800000 !important;
+	}
 } 
+@media only screem and (max-width: 800px){
+	view{
+		viewport-fit: 960vw;
+	}
+	body{
+		font-size: 90%;
+	}
+}
+
+#mobile_menu{
+	display: none;
+}
